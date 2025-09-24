@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SFA Earnings | Professional</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Poppins', sans-serif; margin:0; padding:0; display:flex; justify-content:center; align-items:center; min-height:100vh; background: linear-gradient(135deg, #434158 0%, #24223A 100%); color:#fff; overflow:hidden; animation: pageFadeIn 1.2s ease forwards; opacity:0; }
+  @keyframes pageFadeIn { from { opacity:0; transform: scale(0.98);} to { opacity:1; transform: scale(1);} }
+  .window { width:95%; max-width:500px; border-radius:20px; overflow:hidden; box-shadow:0 15px 50px rgba(0,0,0,0.7); background:#2a2a3c; transform: translateY(-20px); animation: windowSlide 1s ease forwards; padding-bottom:20px; }
+  @keyframes windowSlide { from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);} }
+  .window-header { background:#1e1e2e; padding:8px 12px; display:flex; align-items:center; justify-content:space-between; }
+  .window-header .buttons { display:flex; gap:8px; }
+  .btn-circle { width:14px; height:14px; border-radius:50%; display:inline-block; }
+  .close { background:#ff5f57; }
+  .minimize { background:#ffbd2e; }
+  .maximize { background:#28c840; }
+  .window-title { color:#cfcfcf; font-weight:600; font-size:0.95em; margin:0 auto; }
+  .profile-card { background:#1e1e2e; border-radius:20px; padding:25px; margin:20px auto; width:220px; display:flex; flex-direction:column; align-items:center; box-shadow:0 10px 30px rgba(0,0,0,0.5),0 0 20px #00f0ff; transition: transform 0.3s, box-shadow 0.3s; }
+  .profile-card:hover { transform: translateY(-5px) scale(1.05); box-shadow:0 15px 40px rgba(0,0,0,0.6),0 0 40px #00f0ff; }
+  .profile-card img { width:100px; height:100px; border-radius:20px; border:3px solid #00f0ff; box-shadow:0 0 20px #00f0ff,0 0 35px #00f0ff; margin-bottom:12px; animation:glowPulse 2.5s infinite alternate; }
+  .channel-name { font-size:1.5em; font-weight:700; color:#fff; text-align:center; margin-bottom:6px; text-shadow:0 0 10px #00f0ff,0 0 20px #00f0ff; animation:glowText 3s infinite alternate; }
+  .tagline { font-size:0.9em; color:#d0d0d0; text-align:center; text-shadow:0 0 6px #ff00ff,0 0 12px #ff00ff; animation:glowText 4s infinite alternate; }
+  @keyframes glowPulse { 0% { box-shadow:0 0 15px #00f0ff,0 0 25px #00f0ff; } 100% { box-shadow:0 0 30px #00f0ff,0 0 60px #00f0ff; } }
+  @keyframes glowText { 0% { text-shadow:0 0 6px #00f0ff,0 0 12px #00f0ff; } 100% { text-shadow:0 0 14px #00f0ff,0 0 28px #00f0ff; } }
+  .links-section { display:flex; flex-direction:column; gap:12px; margin-top:10px; padding:0 20px; }
+  .link-btn { display:flex; align-items:center; justify-content:center; padding:12px; border-radius:12px; text-decoration:none; font-weight:600; font-size:1.05em; color:#fff; background:linear-gradient(45deg, #0088CC, #006AA7); cursor:pointer; gap:8px; box-shadow:0 6px 15px rgba(0,0,0,0.25); transition:transform 0.3s, box-shadow 0.3s, filter 0.3s; position:relative; overflow:hidden; }
+  .link-btn img { width:24px; height:24px; border-radius:6px; }
+  .link-btn:hover { transform:translateY(-5px) scale(1.05); box-shadow:0 10px 25px rgba(0,0,0,0.4),0 0 20px #00f0ff; filter:brightness(1.1); }
+  .link-btn:active { transform:scale(0.97); box-shadow:0 6px 15px rgba(0,0,0,0.3),0 0 15px #00f0ff; }
+  .insta { background:linear-gradient(45deg, #F56040, #E1306C, #C13584); }
+  .footer { margin:15px auto 10px; font-size:0.8em; color:#b0b0b0; text-align:center; }
+  .disclaimer-card { background:#1e1e2e; border-radius:20px; padding:18px; margin:10px 20px 20px 20px; box-shadow:0 8px 25px rgba(0,0,0,0.5),0 0 15px #00f0ff; text-align:center; line-height:1.5; font-size:0.8em; }
+  .disclaimer-card a { color:#00f0ff; text-decoration:underline; }
+  @media (max-width:480px) { .profile-card { width:180px; padding:15px; } .profile-card img { width:90px; height:90px; } .channel-name { font-size:1.3em; } .tagline { font-size:0.85em; } .link-btn { font-size:1em; padding:10px; } }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="window-header">
+    <div class="buttons">
+      <span class="btn-circle close"></span>
+      <span class="btn-circle minimize"></span>
+      <span class="btn-circle maximize"></span>
+    </div>
+    <div class="window-title">SFA Earnings</div>
+    <div style="width:40px;"></div>
+  </div>
+  <div class="window-content">
+    <div class="profile-card">
+      <img src="https://iili.io/KlFSubS.md.jpg" alt="SFA Logo">
+      <div class="channel-name">SFA Earnings</div>
+      <div class="tagline">Providing the Best Earning Opportunities</div>
+    </div>
+    <div class="links-section">
+      <a href="https://t.me/+3t2rF83CNHI1OWRl" class="link-btn" target="_blank">
+        <img src="https://iili.io/KlFSubS.md.jpg" alt="Official Telegram">Official Telegram <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a href="https://t.me/+TnUd6UjK9pk4MzQ1" class="link-btn" target="_blank">
+        <img src="https://iili.io/KlFDQVf.md.jpg" alt="Second Telegram">Second Telegram <i class="fab fa-telegram-plane"></i>
+      </a>
+      <a href="https://www.instagram.com/fakharwajir?igsh=amxmZ2N3aDR1ZzRw" class="link-btn insta" target="_blank">
+        <i class="fab fa-instagram"></i>Instagram
+      </a>
+    </div>
+    <footer class="footer">Made with ❤️ for SFA Earnings</footer>
+    <div class="disclaimer-card">
+      All content on this website is for <strong>knowledge, information, educational purposes, and earning tips only</strong>.<br>
+      We <strong>do not promote or engage</strong> in any illegal activities and intend <strong>no harm</strong>.<br>
+      If you find anything incorrect, contact <a href="mailto:SFAEarnings@gmail.com">SFAEarnings@gmail.com</a>.
+    </div>
+  </div>
+</div>
+</body>
+</html>
